@@ -1,0 +1,179 @@
+:root {
+    --couleur-principale: #1e2d59;
+    --couleur-secondaire: #f5f0e1;
+    --couleur-titre: #dfa870;
+    --couleur-speciale: #d0602d;
+}
+
+/* Import et paramétrage des typographies */
+@font-face{
+    font-family: "Rubik Dirt";
+    font-weight: 400;
+    src: url("/fonts/RubikDirt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 500;
+    src: url("/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 600;
+    src: url("/fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    font-weight: 400;
+    src: url("/fonts/EBGaramond-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+
+header {
+    width: 100%;
+    font-family: "Rubik Dirt";
+    color: var(--couleur-principale);
+    background-color: var(--couleur-secondaire);
+    text-transform: uppercase;
+
+    a {
+        font-size: 1.5rem;
+        color: inherit;
+    }
+}
+
+header a:hover {
+    color: var(--couleur-speciale);
+}
+
+.bandeau {
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.bandeau img {
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 183px;
+    padding: 0 148px;
+
+   ul {
+    display: flex;
+    gap: 2rem;
+   }
+
+   img {
+    width: 76px;
+    height: 72px;
+   }
+}
+
+.active {
+    color: var(--couleur-titre);
+}
+
+
+footer {
+    height: 532px;
+    margin-top: 20rem;
+    background-color: var(--couleur-principale);
+    color: var(--couleur-secondaire);
+    display: flex;
+    align-items: center;
+    padding: 0 230px;
+    justify-content: space-between;
+    font-size: 1.25rem;
+
+    #logo-clair {
+        filter: brightness(10);
+    }
+    
+    a {
+        color: inherit;
+        color: var(--couleur-secondaire);
+
+        &:hover {
+            color: var(--couleur-titre);
+        }
+    }
+
+    .liens-interne {
+        text-transform: uppercase;
+        line-height: 2.5;
+        text-align: center;
+    }
+
+    .coordonnees {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        h2 {
+            margin: 0;
+        }
+        
+        p {
+            margin: 0;
+            line-height: 1.5;
+        }
+    }
+
+    .reseaux-sociaux {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+    }
+}
+
+.bandeau-footer {
+    height: 7.813rem;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        position: absolute;
+        top: calc(100vh - 116.5vh);
+    }
+
+    p {
+        margin: -1px 0;
+        color: var(--couleur-secondaire);
+        text-align: right;
+        padding-right: 2.188rem;
+        position: relative;
+        top: 50%;
+    }
+}
