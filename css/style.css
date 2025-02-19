@@ -1,3 +1,5 @@
+/********** Style commun à toutes les pages **********/
+
 :root {
     --couleur-principale: #1e2d59;
     --couleur-secondaire: #f5f0e1;
@@ -106,6 +108,7 @@ li {
 }
 
 
+
 /********** FOOTER **********/
 footer {
     height: 532px;
@@ -177,93 +180,5 @@ footer {
         padding-right: 2.188rem;
         position: relative;
         top: 50%;
-    }
-}
-
-
-/********** PAGE - LES SÉRIES **********/
-h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 108px;
-}
-
-.description-series {
-    display: flex;
-    margin: 0 9rem;
-    justify-content: space-between;
-    margin-bottom: 90px;
-
-    h2 {
-        font-family: "EB Garamond";
-        font-size: 1.375rem;
-        font-weight: 400;
-    }
-}
-
-.liste-series {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 111px;
-    column-gap: 123px;
-    margin: 0 147px;
-
-    img {
-        height: 528px;
-        max-width: 397px;
-        width: 100%;
-    }
-}
-
-.selection-films {
-    display: flex;
-    margin-top: 193px;
-    height: 734px;
-
-    .description-films {
-        background-color: var(--couleur-titre);
-        padding: 40px 280px 0 107px;
-        max-width: 743px;
-
-        h2 {
-            font-family: "Rubik Dirt";
-            color: var(--couleur-secondaire);
-            font-size: 48px;
-            text-transform: uppercase;
-            font-weight: 400;
-            margin-bottom: 60px;
-
-            .texte-grand {
-                font-size: 80px;
-            }
-        }
-
-        p {
-            font-family: 'EB Garamond';
-            color: var(--couleur-principale);
-            font-size: 22px;
-            width: 75%;
-            margin-bottom: 75px;
-
-            .texte-rubik {
-                font-family: "Rubik Dirt";
-                font-size: 48px;
-                text-transform: uppercase;
-            }
-        }
-
-        a {
-            color: var(--couleur-secondaire);
-            text-transform: uppercase;
-            font-size: 20px;
-        }
-    }
-
-    img {
-        max-width: 496px;
-        height: 100%;
     }
 }
