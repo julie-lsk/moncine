@@ -1,2 +1,266 @@
 /********** PAGE - UNE SÉRIE **********/
 
+/* Import des root */
+@import './css/style.css';
+
+.infos-serie {
+    max-width: 1435px;
+    margin: 110px auto 153px auto;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        max-width: 437px;
+        height: max-content;
+    }
+
+    .infos-flex {
+        margin-left: 138px;
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 60px;
+
+            h1 {
+                font-size: 3rem;
+                text-transform: uppercase;
+                margin: 0;
+            }
+        }
+
+        .infos-texte {
+            div:first-of-type {
+                color: var(--couleur-titre);
+                text-transform: uppercase;
+                margin-bottom: 60px;
+
+                p {
+                    font-size: 1.25rem;
+                    margin: 0;
+                    line-height: 1.5;
+                }
+            }
+            div:nth-of-type(2) {
+                text-transform: uppercase;
+                margin-bottom: 60px;
+
+                p {
+                    font-size: 1.25rem;
+                    margin: 0;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        .resume-serie {
+            font-family: "EB Garamond";
+            font-size: 1.375rem;
+            max-width: 754px;
+            margin-bottom: 60px;
+        }
+
+        footer {
+            font-family: "EB Garamond";
+            font-weight: 700;
+            color: var(--couleur-principale);
+            font-size: 1.375rem;
+            display: flex;
+            gap: 60px;
+
+            p {
+                margin-bottom: 0;
+                max-width: 305px;
+            }
+        }
+    }
+}
+
+.mini-galerie-image-serie {
+    display: flex;
+    gap: 64px;
+    justify-content: space-between;
+    max-width: 1435px;
+    margin: auto;
+    margin-bottom: 105px;
+}
+
+
+.resume-avis-serie {
+    max-width: 1435px;
+    min-height: 585px;
+    padding-bottom: 240px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    .commentaire-note {
+        display: flex;
+        flex-direction: column;
+        gap: 170px;
+        max-width: 360px;
+
+        h2 {
+            color: var(--couleur-titre);
+            font-family: "EB Garamond";
+            font-size: 3.75rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        p {
+            color: var(--couleur-speciale);
+            font-family: "Rubik Dirt";
+            font-size: 6rem;
+            margin: 0;
+        }
+    }
+
+    .resume-avis-texte {
+        max-width: 854px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+        .resume-serie, .avis-serie {
+            h3 {
+                font-size: 1.25rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+
+        .texte {
+            font-family: "EB Garamond";
+            font-size: 1.375rem;
+            display: flex;
+            gap: 35px;
+            margin: 0;
+        }
+    }
+}
+
+
+.encart-film {
+    display: flex;
+    justify-content: space-between;
+    max-height: 734px;
+    background-color: var(--couleur-secondaire);
+
+    .infos-film {
+        width: 22%;
+        color: var(--couleur-principale);
+        padding: 90px 45px;
+
+        h2 {
+            font-family: "Rubik Dirt";
+            font-size: 3.75rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: var(--couleur-titre);
+            margin: auto auto 100px auto;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-family: "EB Garamond";
+            font-size: 1.375rem;
+            margin-bottom: 50px;
+        }
+
+        a {
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            color: var(--couleur-titre);
+            &:hover {
+                color: var(--couleur-speciale);
+            }
+        }
+    }
+
+    img {
+        width: 70%;
+        max-height: 734px;
+    }
+}
+
+
+.encart-serie-du-vendredi {
+    max-height: 722px;
+    background-color: var(--couleur-titre);
+    display: flex;
+    color: var(--couleur-principale);
+    margin-bottom: -2px; /* pour l'image */
+    overflow: hidden; /* pour l'image */
+
+    img {
+        max-width: 480px;
+        height: 100%;
+    }
+
+    .infos-serie-du-vendredi {
+        margin: 85px 0 85px 115px;
+
+        h2, #vendredi {
+            margin: 0;
+            font-family: "Rubik Dirt";
+            font-size: 5rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: var(--couleur-secondaire);
+        }
+
+        h3 {
+            margin: 0;
+            font-family: "Rubik Dirt";
+            font-size: 3rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: var(--couleur-secondaire);
+            text-align: end;
+            margin-right: 80px;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-family: "EB Garamond";
+            font-size: 1.375rem;
+            max-width: 65%;
+            margin-bottom: 55px;
+        }
+
+        a {
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            color: var(--couleur-secondaire);
+            &:hover {
+                color: var(--couleur-speciale);
+            }
+        }
+    }
+
+    .image-serie-du-vendredi {
+        margin: 85px 115px 85px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        img {
+            max-width: 263px;
+            height: 100%;
+        }
+    }   
+}
